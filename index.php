@@ -14,7 +14,7 @@ Ogni array della partita avrà una squadra di casa e una squadra ospite, punti f
       [
         "casa" => "Orbetello",
         "ospite" => "Treviso",
-        "punti_casa" => 354,
+        "punti_casa" => 54,
         "punti_ospiti" => 29,
       ],
       [
@@ -42,6 +42,12 @@ Ogni array della partita avrà una squadra di casa e una squadra ospite, punti f
             echo $matches [$i]["casa"] . "";
             echo "-";
             echo $matches [$i]["ospite"] . "";
+
+            echo $matches [$i]["punti_casa"] . "";
+            echo "-";
+            echo $matches [$i]["punti_ospiti"] . "";
+
+
 
 
           }
