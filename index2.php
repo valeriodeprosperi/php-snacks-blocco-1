@@ -23,6 +23,15 @@ $age = $_GET["age"];
    <p>
      <?php
        echo $name . $mail . $age;
+
+      if (strln($name) > 3 && strpos($mail , "@") == true && strpos($mail ,".") ==true && int_numeric($age) ==true ) {
+
+        echo "Accesso riuscito";
+
+      }else {
+        echo "Accesso negato";
+      }
+
       ?>
    </p>
  </body>
