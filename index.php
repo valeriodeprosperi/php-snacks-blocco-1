@@ -12,11 +12,40 @@ Ogni array della partita avrà una squadra di casa e una squadra ospite, punti f
         "punti_ospiti" => 31,
       ],
       [
-        
-      ]
+        "casa" => "Orbetello",
+        "ospite" => "Treviso",
+        "punti_casa" => 354,
+        "punti_ospiti" => 29,
+      ],
+      [
+        "casa" => "Cosenza",
+        "ospite" => "Salerno",
+        "punti_casa" => 15,
+        "punti_ospiti" => 72,
+      ],
 
   ];
 
-
-
  ?>
+
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title></title>
+   </head>
+   <body>
+     <p>
+       <?php
+          for ($i=0; $i < count($matches); $i++) {
+            echo "<br>";
+            echo $matches [$i]["casa"] . "";
+            echo "-";
+            echo $matches [$i]["ospite"] . "";
+
+
+          }
+        ?>
+     </p>
+   </body>
+ </html>
